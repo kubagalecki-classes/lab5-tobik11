@@ -8,7 +8,7 @@
 
 std::vector< char > foo(std::list< Human >& people)
 {
-    for (auto i : people) {
+    for (Human & i : people) {
         i.birthday();
     }
     std::vector<char> mons;
